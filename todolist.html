@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 relative bg-cover bg-center bg-no-repeat bg-fixed  bg-gray-300 bg-blend-multiply " style="background-image: url('img/pexels-energepic-com-27411-110473\ \(1\).jpg');">
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold text-center mb-8" >To-Do List</h1>
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="mb-4">
+                <input id="taskInput" type="text" class="w-full p-2 border border-gray-300 rounded" placeholder="Enter a new task">
+            </div>
+            <div class="mb-4">
+                <button id="addTaskButton" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Add Task</button>
+            </div>
+            <ul id="taskList" class="list-disc pl-5"></ul>
+            <button onclick="ClearAll()" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+                Clear All
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
